@@ -413,8 +413,9 @@ Hides the mobile loader
 body, * {
   margin: 0;
   padding: 0;
-  font-family: 'Lato';
+  font-family: "Gochi Hand", cursive;
   font-size: 16px;
+  color: #585858;
 }
 
 p {
@@ -489,7 +490,7 @@ a {
 a:hover {
   cursor: pointer;
   text-decoration: none;
-  color: #FFC207;
+  color: #FF9802;
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
 }
@@ -809,7 +810,7 @@ a:hover {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  background-color: #FFC207;
+  background-color: #FF9802;
   color: #fff;
 }
 

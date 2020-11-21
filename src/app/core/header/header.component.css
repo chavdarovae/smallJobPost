@@ -413,8 +413,9 @@ Hides the mobile loader
 body, * {
   margin: 0;
   padding: 0;
-  font-family: 'Lato';
+  font-family: "Gochi Hand", cursive;
   font-size: 16px;
+  color: #585858;
 }
 
 p {
@@ -489,7 +490,7 @@ a {
 a:hover {
   cursor: pointer;
   text-decoration: none;
-  color: #FFC207;
+  color: #FF9802;
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
 }
@@ -767,27 +768,47 @@ a:hover {
 }
 
 .header {
-  height: 150px;
+  height: 120px;
   width: 100%;
 }
 
-.logo {
-  height: 100px;
-  width: 100px;
+.header .container {
+  height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border: 6px solid #363538;
-  border-radius: 50%;
+}
+
+.header__img {
+  height: auto;
+  width: 100px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  z-index: 3;
+}
+
+.logo {
+  position: relative;
 }
 
 .logo__img {
-  height: 75px;
-  width: 75px;
+  height: auto;
+  width: 200px;
+}
+
+.logo::after {
+  content: "SmoJo Cloude";
+  display: inline;
+  position: absolute;
+  font-size: 30px;
+  color: #fff;
+  top: 50px;
+  left: 20px;
 }
